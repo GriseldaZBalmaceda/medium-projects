@@ -33,6 +33,8 @@ const TestPage = async (url) => {
         }
         return message;
     }).catch((error)=>console.log(error));
+
+    await browser.close();
     return response;
 }
 //add the link you want to test!
